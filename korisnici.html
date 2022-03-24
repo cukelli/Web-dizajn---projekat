@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,206 +10,157 @@
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest">
 
     </script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="login.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <section class="header">
         <nav>
-            <a href="index.html" style="text-decoration: none;" class="pocetna"><label class="logo"> SmartLearn </label> </a>
+            <a href="index.html" style="text-decoration: none;" class="pocetna"><label class="logo"> SmartLearn  </label> </a>
             <div class="nav-links">
                 <span class="icons-test"><i class="fa fa-times"></i></span>
 
                 <ul>
-
-
-                    <a href="shopping cart.html">
-                        <li class="korpa"><i class="fa fa-shopping-cart"></i></li>
-                    </a>
+                    
+         
+                    <a href="shopping cart.html"><li class="korpa"><i class="fa fa-shopping-cart"></i></li> </a>     
                     <li> <a href=""> KURSEVI </a></li>
                     <li> <a href=""> KATEGORIJE </a></li>
                     <li> <a href=""> O NAMA </a></li>
                     <li> <a href=""> KONTAKT </a></li>
-                    <li> <a href="korisnici.html"> KORISNICI </a> </li>
-                    <li class="login js-popup-open" class="show-btn" id="show"><a href="#">PRIJAVITE SE</a></li>
-                    <li class="register js-popup-open" class=show-btn1 id="show1"><a href="#"> REGISTRACIJA </a> </li>
-
-
-
-
+                    <li class="login" class="show-btn" id="show"><a href="">PRIJAVITE SE</a></li>
+                    <li class="register" class=show-btn1 id="show1"><a href=""> REGISTRACIJA </a> </li>
+                    
+                    
+        
+    
 
                 </ul>
-        </nav>
-
-        <table class="table">
-            <thead id="korisniciTabelaTh">
-                <th>Adresa</th>
-                <th>Datum rodjenja </th>
-                <th> Mejl </th>
-                <th>ime</th>
-                <th>Korisnicko ime</th>
-                <th>Lozinka </th>
-                <th>Prezime</th>
-                <th>Telefon </th>
-                <th> Detalji </th>
-            </thead>
-            <tbody id="korisniciTabela">
-            </tbody>
-
-        </table>
-
-
-
-
-        <div class="center modal modal-registration" id="prijava">
-            <div class="container">
-                <label for="show" class="close-btn fas fa-times"></label>
-                <button class="close-btn fas fa-times" id="zatvori"></button>
-                <div class="text"> Prijava </div>
-                <form action="#">
-                    <div class="data">
-                        <label class="label-form">korisnicko ime </label>
-                        <input type="text" placeholder="Unesite korisnicko ime" id="korisnickoImeLogin">
-                        <div class="data">
-                            <label class="label-form"> Lozinka </label>
-                            <input type="password" placeholder="Unesite lozinku" id="lozinkaLogin">
+            </nav>
+            
+            
+                <div class="table-box">
+                    <div class="table-row table-head">
+                        <div class="table-cell first-cell">
+                            <p><b><a href="pojedinacan korisnik.html"> Korisnik</a> </p> </b>
                         </div>
+                        <div class="table-cell">
+                            <p> <b> korisnicko ime </p> </b>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p><b> mejl</p> </b>
+                        </div>
+
                     </div>
-                    <div class="forgot-pas"><a href="#"> Forgot password</a> </div>
-                    <div class="btn">
-                        <div class="inner"></div>
-                        <button type="button" id="Dugme">Login</button>
+                    <div class="table-row">
+                        <div class="table-cell first-cell">
+                            <p> Pera Peric </p>
+                        </div>
+                        <div class="table-cell">
+                            <p> perra </p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p> peraperi@gmail.com </p>
+                        </div>
+
                     </div>
-                </form>
+                    <div class="table-row">
+                        <div class="table-cell first-cell">
+                            <p> Pera Peric </p>
+                        </div>
+                        <div class="table-cell">
+                            <p> perra </p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p> peraperi@gmail.com </p>
+                        </div>
+
+    
+                        </div>
+
+                    
+                            <div class="table-row">
+                        <div class="table-cell first-cell">
+                            <p> Pera Peric </p>
+                        </div>
+                        <div class="table-cell">
+                            <p> perra </p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p> peraperi@gmail.com </p>
+                        </div>
+                       
+        
+                </div>
+                <div class="center modal-register">
+
+    <div class="container">
+        <label for="show" class="close-btn fas fa-times"></label>
+        <div class="text"> Prijava </div>
+        <form action="#">
+            <div class="data">
+                <label class="label-form"> Korisnicko ime </label>
+                <input type="text" required>
+                <div class="data">
+                    <label class="label-form" required> Lozinka </label>
+                    <input type="password">
             </div>
-        </div>
-
-
-
-
-
-        <div class="registracija modal" id="registracijakorisnika">
-            <div class="container">
-                <label for="show" id="zatvori1" class="close-btn fas fa-times"></label>
-                <div class="text"> Registracija </div>
-                <form action="#" id="formaregistracija">
-                    <div class="data">
-                        <label class="label-form">korisnicko ime </label>
-                        <input type="text" placeholder="Unesite korisnicko ime" id="korisnickoime">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form" required> Lozinka </label>
-                        <input type="password" placeholder="Unesite lozinku" id="lozinka">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form"> Potvrdite lozinku </label>
-                        <input type="password" placeholder="Potvrdite lozinku" id="potvrdalozinke">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form"> Email </label>
-                        <input type="email" id="mejl" placeholder="Unesite mejl">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form"> Ime </label>
-                        <input type="text" id="ime" placeholder="Unesite ime">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form"> Prezime</label>
-                        <input type="text" id="prezime" placeholder="Unesite prezime">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form"> Datum rodjenja </label>
-                        <input type="date" id="datumrodjenja">
-                        <div class="error"></div>
-                    </div>
-                    <div class="data">
-                        <label class="label-form"> Broj telefona </label>
-                        <input type="number" id="broj" placeholder="Unesite broj telefona">
-                        <div class="error"></div>
-                    </div>
-
-                    <div class="btn">
-                        <div class="inner"></div>
-                        <button type="submit">Registruj se </button>
-                    </div>
-                </form>
+            <div class="forgot-pas"><a href="#"> Forgot password</a> </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit">Login </button>
             </div>
-        </div>
-        <script src="script.js"></script>
-        <script type="module">
-            
-            const firebaseConfig = {
-                apiKey: "AIzaSyDLr2YUlqFoyZRZeQGOOlNypzxD9obSJxM",
-                authDomain: "web-druga-kontrolna.firebaseapp.com",
-                databaseURL: "https://web-druga-kontrolna-default-rtdb.europe-west1.firebasedatabase.app",
-                projectId: "web-druga-kontrolna",
-                storageBucket: "web-druga-kontrolna.appspot.com",
-                messagingSenderId: "988438363897",
-                appId: "1:988438363897:web:af8a903a2d8d730b6d2c28"
-            };
-
-            import {
-                initializeApp
-            } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-
-            import {
-                getDatabase,
-                ref,
-                child,
-                get,
-                onValue
-            } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+        </form>
+    </div>
+</div>
+</section>
 
 
-            const app = initializeApp(firebaseConfig);
-            const database = getDatabase(app);
-            const reference = ref(database);
-            
-            var korisniciTabela = document.getElementById("korisniciTabela");
-            
-            console.log(korisniciTabela);
-            
-            get(child(reference, "korisnici/")).then((snapshot) => {
-                if (snapshot.exists()) {
-                    var korisnici = snapshot.val();
-                    for (const id in korisnici) {
 
-                        var korisnik = korisnici[id];
-                        console.log(korisnik);
-                        var tr = document.createElement("tr");
 
-                        for (const item in korisnik) {
-                            var data = korisnik[item];
-                            console.log(item);
-                            var td = document.createElement("td");
-                            td.innerHTML = data;
-                            tr.appendChild(td);
-                        }
-                        
-                        var td = document.createElement("td");
-                        td.innerHTML = '<a href="pojedinacan korisnik.html?korime='+korisnik.korisnickoIme+'">vise detalja</a>';
-                        tr.appendChild(td);
-                        
-                        korisniciTabela.appendChild(tr);
-                    }
-                } else {
-                    console.log("No data available");
-                }
-            }).catch((error) => {
-                console.error(error);
-            });
-
-        </script>
-
+<div class="center modal-registration"  id="registracijakorisnika">
+    <div class="container">
+        <label for="show" class="close-btn fas fa-times"></label>
+        <div class="text"> Registracija </div>
+        <form action="#">
+            <div class="data">
+                <label class="label-form">korisnicko ime </label>
+                <input type="text" required>
+                <div class="data">
+                    <label class="label-form" required> Lozinka </label>
+                    <input type="password">
+                </div>
+                <div class="data">
+                    <label class="label-form" required> Potvrdite lozinku </label>
+                    <input type="password">
+                </div>
+                <div class="data">
+                    <label class="label-form" required> Email </label>
+                    <input type="email">
+                </div>
+                <div class="data">
+                    <label class="label-form" required> Ime </label>
+                    <input type="text">
+                </div>
+                <div class="data">
+                    <label class="label-form" required> Prezime</label>
+                    <input type="text">
+                </div>
+                <div class="data"> 
+                    <label class="label-form" required> Datum rodjenja </label>
+                    <input type="date">
+                </div>
+                <div class="data">
+                    <label class="label-form" required> Broj telefona </label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="btn">
+               <div class="inner"></div>
+               <button type="submit">Registruj se  </button>
+        </form>
+    </div>
+   </div>
+    
 </body>
-
 </html>

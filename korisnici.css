@@ -1,69 +1,82 @@
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: hidden;
+}
+
+
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Lora", serif;
-}
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+  }
 
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/pozadina.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-label.logo {
-  color: #fff;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 0px;
-  font-weight: bold;
-  margin-bottom: 333px;
-  margin-top: 40%;
-}
-nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/pozadina.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  label.logo {
+    color:#fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 0px;
+    font-weight: bold;
+    margin-bottom: 333px;
+    margin-top: 40%;
+  }
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ee82ee;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
 
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-.nav-links ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
-}
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #ee82ee;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
+  .korpa {
+    color:#fff;
+    }
 
-.nav-links ul li:hover::after {
-  width: 100%;
-}
 
-.korpa {
-  color: #fff;
-}
-
-/* .table-box {
+    .table-box {
     margin: 50px auto;
     }
 
@@ -105,84 +118,36 @@ nav {
     .first-cell {
     text-align: left;
     padding-left: 10px;
-    }*/
+    }
 
-.table {
-  width: 100%;
-  border-collapse: collapse;
-}
 
-.table td,
-.table th {
-  padding: 12px 15px;
-  text-align: center;
-  border: 1px solid #9f01ea;
-  font-size: 16px;
-  background-color: #fff;
-}
 
-.table th {
-  background-color: rgba(214, 31, 175, 0.815);
-}
+    @media (max-width: 700px) {
+      .text-box h1 {
+        font-size: 20px;
+      }
+      .nav-links ul li {
+        display: block;
+      }
+      .hero-btn {
+        display: block;
+      }
+      .nav-links {
+        position: absolute;
+        background: #800080;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+      }
+  
+    }
 
-.table tbody tr:nth-child(even) {
-  background-color: #ee82ee;
-}
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .hero-btn {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #800080;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-  }
 
-  .table thead {
-    display: none;
-  }
 
-  .table,
-  .table tbody,
-  table tr,
-  .table td {
-    display: block;
-    width: 100%;
-  }
-
-  .table tr {
-    margin-bottom: 15px;
-  }
-  .table td {
-    text-align: left;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  .table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 15px;
-    font-weight: bold;
-    text-align: left;
-  }
-}
-
-/*-----popup form------*/
-
+    /*-----popup form------*/
 .text {
   color: #000000;
 }
@@ -205,11 +170,6 @@ nav {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-#zatvori {
-  padding: 0;
-  border: none;
-  background: none;
-}
 .container .text {
   font-size: 35px;
   font-weight: 600;
@@ -268,8 +228,8 @@ form .btn:hover .inner {
   left: 0;
 }
 
-.forgot-pas {
-  margin-left: 32%;
+form .forgot-pass {
+  margin-top: -8px;
 }
 
 form .data input:focus {
@@ -324,6 +284,10 @@ form .signup-link a:hover {
   display: block;
 }
 
+input [type="checkbox"] {
+  display: none;
+}
+
 .modal-register {
   position: fixed;
   top: 0;
@@ -332,33 +296,20 @@ form .signup-link a:hover {
   width: 100vw;
   height: 100vh;
   flex-direction: column;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 5063;
-  pointer-events: none;
-}
-
-.modal-registration {
   display: none;
+  pointer-events: none;
 }
 
 .modal-register-active {
   display: flex;
   pointer-events: inherit;
 }
-.registracija {
-  padding-top: 20px;
-  display: none;
-}
+
 
 #registracijakorisnika {
-  display: none;
-  padding-top: 200px;
-}
-
-.label-form {
-  display: inline-block;
-  width: 70px;
-  margin-left: 12%;
-}
+  visibility:hidden;
+  }

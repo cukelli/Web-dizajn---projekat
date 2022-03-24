@@ -8,14 +8,14 @@
   visibility: hidden;
 }
 
+
 .header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/objektno.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/objektno.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
 }
 .registration {
   display: flex;
@@ -43,8 +43,8 @@ nav {
 }
 
 .korpa {
-  color: #fff;
-}
+  color:#fff;
+  }
 
 .nav-links ul li {
   list-style: none;
@@ -82,35 +82,32 @@ nav {
 
 .text-box h1 {
   font-size: 62px;
-  margin-top: 10%;
 }
 
-.text-box p {
+ .text-box p {
   margin: 10px 0 40px;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  text-align: justify;
-  text-align: center;
 }
 
-.oblast {
+.oblast{
   width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
+margin: auto;
+text-align: center;
+padding-top: 100px;
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 600;
+font-size: 36px;
+font-weight: 600;
 }
 
 p {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
+color: #000000;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+padding: 10px;
 }
 
 /*------oblasti------*/
@@ -132,15 +129,14 @@ p {
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
-  text-align: left;
 }
 
 .row {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  text-align: left;
 }
+
 
 h3 {
   text-align: center;
@@ -149,13 +145,14 @@ h3 {
 }
 
 .rating {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  color: white;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+display: flex;
+color:white;
 }
+
 
 /*-----responsive------*/
 @media (max-width: 700px) {
@@ -195,21 +192,16 @@ h3 {
   }
 }
 
-img {
-  width: 90px;
-  border-radius: 30%;
-  height: 90px;
-  /* margin-bottom: 50%;*/
-}
-
 @media (max-width: 700px) {
   .row {
     flex-direction: column;
   }
 }
 
-/*-----popup form------*/
 
+
+
+/*-----popup form------*/
 .text {
   color: #000000;
 }
@@ -232,11 +224,6 @@ img {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-#zatvori {
-  padding: 0;
-  border: none;
-  background: none;
-}
 .container .text {
   font-size: 35px;
   font-weight: 600;
@@ -295,8 +282,8 @@ form .btn:hover .inner {
   left: 0;
 }
 
-.forgot-pas {
-  margin-left: 32%;
+form .forgot-pass {
+  margin-top: -8px;
 }
 
 form .data input:focus {
@@ -351,6 +338,7 @@ form .signup-link a:hover {
   display: block;
 }
 
+
 .modal-register {
   position: fixed;
   top: 0;
@@ -366,42 +354,22 @@ form .signup-link a:hover {
   pointer-events: none;
 }
 
-.modal-registration {
-  display: none;
-}
-
 .modal-register-active {
   display: flex;
   pointer-events: inherit;
 }
-.registracija {
-  padding-top: 20px;
-  display: none;
+
+.center modal-registration {
+  pointer-events: none;
+ visibility: hidden;
 }
 
 #registracijakorisnika {
-  display: none;
-  padding-top: 200px;
+visibility:hidden;
 }
 
 .label-form {
-  /*padding-left: 40px;
-  padding-top: 10px; */
-  display: inline-block;
-  width: 70px;
-  margin-left: 12%;
+padding-left: 40px;
+padding-top: 10px;
 }
 
-.logo {
-  text-decoration: none;
-}
-
-#kursInfo {
-  margin-top: 8%;
-  font-size: small;
-  text-align: justify;
-}
-
-#course {
-  margin-top: 10%;
-}

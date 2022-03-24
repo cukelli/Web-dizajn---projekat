@@ -364,11 +364,6 @@ h3 {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-#zatvori {
-  padding: 0;
-  border: none;
-  background: none;
-}
 .container .text {
   font-size: 35px;
   font-weight: 600;
@@ -427,9 +422,8 @@ form .btn:hover .inner {
   left: 0;
 }
 
-.forgot-pas {
-  /* margin-top: -8px;*/
-  margin-left: 32%;
+form .forgot-pass {
+  margin-top: -8px;
 }
 
 form .data input:focus {
@@ -484,6 +478,7 @@ form .signup-link a:hover {
   display: block;
 }
 
+
 .modal-register {
   position: fixed;
   top: 0;
@@ -499,43 +494,22 @@ form .signup-link a:hover {
   pointer-events: none;
 }
 
-.modal-registration {
-  display: none;
-}
-
 .modal-register-active {
   display: flex;
   pointer-events: inherit;
 }
-.registracija {
-  padding-top: 20px;
-  display: none;
+
+.center modal-registration {
+  pointer-events: none;
+ visibility: hidden;
 }
 
 #registracijakorisnika {
-  display: none;
-  padding-top: 200px;
+visibility:hidden;
 }
 
 .label-form {
-  /*padding-left: 40px;
-  padding-top: 10px; */
-  display: inline-block;
-  width: 70px;
-  margin-left: 12%;
+padding-left: 40px;
+padding-top: 10px;
 }
 
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
-
-.container {
-  margin-top: 10%;
-}
-
-.formaprijava {
-  display: none;
-}

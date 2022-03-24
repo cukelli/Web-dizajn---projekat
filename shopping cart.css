@@ -1,194 +1,208 @@
-html,
-body {
+html,body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  /* overflow-y: hidden;*/
+  overflow-y: hidden;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Lora", serif;
-}
-
-.registration {
-  display: flex;
-  justify-content: center;
-  visibility: hidden;
-}
-.icons-test {
-  display: none;
-  visibility: hidden;
-}
-
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/pozadina.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-label.logo {
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 0px;
-  font-weight: bold;
-}
-nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  flex: 1;
-  text-align: right;
-}
-
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-.nav-links ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
-}
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #ee82ee;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-  width: 100%;
-}
-
-.korpa {
-  color: #fff;
-}
-
-.small-container {
-  color: #fff;
-  padding: 60px;
-}
-
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
   }
-  .nav-links ul li {
-    display: block;
-  }
-  .hero-btn {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #800080;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-  }
-
-  nav.fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 21px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
+  
+  .registration {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
   }
   .icons-test {
-    display: block;
-    visibility: visible;
-  }
-  .cart-info p {
     display: none;
+    visibility: hidden;
   }
-}
+  
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/pozadina.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 0px;
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ee82ee;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
 
-/*----cart items -----*/
+  .korpa {
+    color: #fff;
+  }
 
-.cart-page {
-  margin: 80px auto;
-}
+  .small-container {
+    color:#fff
+  }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
 
-.cart-info {
-  display: flex;
-  flex-wrap: wrap;
-}
+  @media (max-width: 700px) {
+    .text-box h1 {
+      font-size: 20px;
+    }
+    .nav-links ul li {
+      display: block;
+    }
+    .hero-btn {
+      display: block;
+    }
+    .nav-links {
+      position: absolute;
+      background: #800080;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+    }
+  
+    nav.fa {
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 21px;
+      cursor: pointer;
+    }
+    .nav-links ul {
+      padding: 30px;
+    }
+    .icons-test {
+      display: block;
+      visibility: visible;
+    }
+    .cart-info p {
+        display:none;
 
-th {
-  text-align: left;
-  padding: 5px;
-  color: #fff;
-  background: #800080;
-  font-weight: normal;
-}
+    }
+    }
+  
 
-td {
-  padding: 10px 5px;
-}
 
-td input {
-  width: 40px;
-  height: 30px;
-  padding: 5px;
-}
 
-td a {
-  color: #800080;
-  font-size: 12px;
-}
+  
+  /*----cart items -----*/
+
+  .cart-page {
+      margin: 80px auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .cart-info{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  th{
+    text-align: left;
+    padding:5px;
+    color:#fff;
+    background: #800080;
+    font-weight: normal;
+  }
+
+  td {
+    padding: 10px 5px;
+  }
+
+  td input{
+      width: 40px;
+      height: 30px;
+      padding:5px;
+  }
+
+
+  td a {
+    color:#800080;
+    font-size: 12px;
+
+  }
 
 .cart1 {
-  margin-left: 20px;
+margin-left: 20px;
 }
 
-.total-price {
-  display: flex;
-  justify-content: flex-end;
+.total-price{
+display: flex;
+justify-content: flex-end;
 }
 
-.total-price table {
-  border-top: 3px solid #800080;
-  width: 100%;
-  max-width: 400px;
+.total-price table{
+border-top: 3px solid #800080;
+width: 100%;
+max-width: 400px;
 }
 
-td:last-child {
-  text-align: right;
+td:last-child{
+    text-align: right;
 }
 
-th:last-child {
-  text-align: right;
+th:last-child{
+    text-align: right;
 }
+
+
+
+
+
+
+
+
+
 
 /*-----popup form------*/
-
 .text {
   color: #000000;
 }
@@ -211,11 +225,6 @@ th:last-child {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-#zatvori {
-  padding: 0;
-  border: none;
-  background: none;
-}
 .container .text {
   font-size: 35px;
   font-weight: 600;
@@ -274,8 +283,8 @@ form .btn:hover .inner {
   left: 0;
 }
 
-.forgot-pas {
-  margin-left: 32%;
+form .forgot-pass {
+  margin-top: -8px;
 }
 
 form .data input:focus {
@@ -283,7 +292,7 @@ form .data input:focus {
   border-bottom-width: 2px;
 }
 
-form.forgot-pass a {
+form .forgot-pass a {
   color: #3498db;
   text-decoration: none;
 }
@@ -330,42 +339,38 @@ form .signup-link a:hover {
   display: block;
 }
 
+
 .modal-register {
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
-  /*height: 100vh;*/
+  height: 100vh;
   flex-direction: column;
   display: none;
   align-items: center;
   justify-content: center;
-  /*z-index: 5063;*/
+  z-index: 5063;
   pointer-events: none;
-  margin-bottom: 50%;
-}
-
-.modal-registration {
-  display: none;
 }
 
 .modal-register-active {
   display: flex;
   pointer-events: inherit;
 }
-.registracija {
-  /*padding-top: 20px;*/
-  display: none;
+
+.center modal-registration {
+  pointer-events: none;
+ visibility: hidden;
 }
 
 #registracijakorisnika {
-  display: none;
-  /* padding-top: 150px;*/
+visibility:hidden;
 }
 
 .label-form {
-  display: inline-block;
-  width: 70px;
-  margin-left: 12%;
+padding-left: 40px;
+padding-top: 10px;
 }
+
