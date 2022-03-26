@@ -1,0 +1,232 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekcija za kupovinu </title>
+    <link rel="stylesheet" href="shopping cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest">
+
+    </script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="login.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" style="text-decoration: none;"><label class="logo"> SmartLearn  </label> </a>
+            <div class="nav-links">
+                <span class="icons-test"><i class="fa fa-times"></i></span>
+
+                <ul>
+                    
+                       
+                    <li class="korpa"><i class="fa fa-shopping-cart"></i></li>      
+                    <li> <a href=""> KURSEVI </a></li>
+                    <li> <a href=""> KATEGORIJE </a></li>
+                    <li> <a href=""> O NAMA </a></li>
+                    <li> <a href=""> KONTAKT </a></li>
+                    <li> <a href="korisnici.html"> KORISNICI </a> </li>
+                    <li class="login js-popup-open" class="show-btn" id="show"><a href="#">PRIJAVITE SE</a></li>
+                    <li class="register js-popup-open" class=show-btn1 id="show1"><a href="#"> REGISTRACIJA </a> </li>
+
+    
+
+                </ul>
+
+                <span class="icons-test"><i class="fa fa-bars"></i></span>
+
+            </div>
+        </nav>
+        <!-----cart idem details -->
+        <div class="small-container cart-page">
+            <table id="kupovinaKursevi">
+                <tr>
+                    <th> Kurs </th>
+                    <th> Jezik </th>
+                    <th> Kupovina </th>
+                </tr>
+            </table>
+            
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Ukupna cena </td>
+                        <td id="cena">2000.00 din</td>
+                        <td> <button type="button" id="potvrda_korpa">Potvrdite akciju </button></td>
+                    </tr>
+                  
+                    
+                </table>
+               
+            </div>
+        </div>
+
+    </div>
+   
+
+
+    <div class="center modal modal-registration"  id="prijava">
+        <div class="container">
+            <label for ="show" class="close-btn fas fa-times"></label>
+            <button class="close-btn fas fa-times" id="zatvori"></button>
+            <div class="text"> Prijava </div>
+            <form action="#">
+                <div class="data">
+                    <label class="label-form">korisnicko ime </label>
+                    <input type="text" placeholder="Unesite korisnicko ime" id="korisnickoImeLogin">
+                    <div class="data">
+                        <label class="label-form">  Lozinka </label>
+                        <input type="password" placeholder="Unesite lozinku" id="lozinkaLogin">
+                    </div>
+                </div>
+                <div class="forgot-pas"><a href="#"> Forgot password</a> </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="button" id="Dugme">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="registracija modal"  id="registracijakorisnika">
+        <div class="container">
+                       <label for ="show" id="zatvori1" class="close-btn fas fa-times"></label>
+            <div class="text"> Registracija </div>
+            <form action="#" id="formaregistracija">
+                <div class="data">
+                    <label class="label-form">korisnicko ime </label>
+                    <input type="text" placeholder="Unesite korisnicko ime" id="korisnickoime">
+                    <div class="error"></div>
+                </div>
+                    <div class="data">
+                        <label class="label-form" required> Lozinka </label>
+                        <input type="password" placeholder="Unesite lozinku" id="lozinka">
+                        <div class="error"></div>
+                    </div>
+                    <div class="data">
+                        <label class="label-form"> Potvrdite lozinku </label>
+                        <input type="password" placeholder="Potvrdite lozinku" id="potvrdalozinke">
+                        <div class="error"></div>
+                    </div>
+                    <div class="data">
+                        <label class="label-form"> Email </label>
+                        <input type="email" id="mejl" placeholder="Unesite mejl">
+                        <div class="error"></div>
+                    </div>
+                    <div class="data">
+                        <label class="label-form"> Ime </label>
+                        <input type="text" id="ime" placeholder="Unesite ime">
+                        <div class="error"></div>
+                    </div>
+                    <div class="data">
+                        <label class="label-form"> Prezime</label>
+                        <input type="text" id="prezime" placeholder="Unesite prezime">
+                        <div class="error"></div>
+                    </div>
+                    <div class="data"> 
+                        <label class="label-form"> Datum rodjenja </label>
+                        <input type="date" id="datumrodjenja">
+                        <div class="error"></div>
+                    </div>
+                    <div class="data">
+                        <label class="label-form"> Broj telefona </label>
+                        <input type="number" id="broj" placeholder="Unesite broj telefona">
+                        <div class="error"></div>
+                    </div>
+               
+                <div class="btn">
+                   <div class="inner"></div> 
+                   <button type="submit">Registruj se </button> 
+                </div>
+            </form>
+        </div>
+       </div>
+
+
+    <script src="shopping_cart.js"></script>
+    <script type="module">
+            
+            const firebaseConfig = {
+                apiKey: "AIzaSyDLr2YUlqFoyZRZeQGOOlNypzxD9obSJxM",
+                authDomain: "web-druga-kontrolna.firebaseapp.com",
+                databaseURL: "https://web-druga-kontrolna-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "web-druga-kontrolna",
+                storageBucket: "web-druga-kontrolna.appspot.com",
+                messagingSenderId: "988438363897",
+                appId: "1:988438363897:web:af8a903a2d8d730b6d2c28"
+            };
+
+            import {
+                initializeApp
+            } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+
+            import {
+                getDatabase,
+                ref,
+                child,
+                get,
+                onValue
+            } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+
+
+            const app = initializeApp(firebaseConfig);
+            const database = getDatabase(app);
+            const reference = ref(database);
+            
+            var ids = [
+                "11111111110",
+                "11111111114",
+                "11111111119",
+                "11111111116"
+            ];
+
+            var kupovinaKursevi = document.getElementById("kupovinaKursevi");
+            
+            var ukupno = 0;
+        
+            get(child(reference, "kursevi/")).then((snapshot) => {
+                if (snapshot.exists()) {
+                    var kursevi = snapshot.val();
+                    for (const id in kursevi) {
+                        var kurs = kursevi[id];
+                        
+                        if(!ids.includes(kurs.id+"")){
+                            continue;
+                        }
+                        
+                        var naziv = kurs.naziv;
+                        var slika = kurs.slika;
+                        var cena = kurs.cena;
+                        var jezik = kurs.jezik;
+                        
+                        ukupno+=cena;
+
+                        var tr = document.createElement("tr");
+                        
+                        var td = document.createElement("td");
+                        td.innerHTML = '<div class="cart-info" style="text-align: left;"><div><img src="'+slika+'" width="100" height="100"></div><div class="cart1"><p>'+naziv+' </p><Small> Cena: '+cena+' din</Small><br><a href="">Izbacite iz korpe</a></div></div>';
+                        tr.appendChild(td);
+                        
+                        tr.innerHTML+='<td> <input type="text" value="srp"> </td><td> <input type="text" value="Da/ne"> </td>';
+                        
+                        
+                        kupovinaKursevi.appendChild(tr);
+                    }
+                    
+                    document.getElementById("cena").innerHTML = ukupno+" din";
+                } else {
+                    console.log("No data available");
+                }
+            }).catch((error) => {
+                console.error(error);
+            });
+
+        </script>
+</body>
+</html>
